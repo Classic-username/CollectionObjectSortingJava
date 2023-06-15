@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Scanner;
 
@@ -48,6 +49,7 @@ public class Main {
                     // TODO: Sort the people list by name
                     // Use the Collections.sort() method and a custom comparator
                     // Hint: Look into Comparator.comparing() method to specify the key to compare
+                    Collections.sort(people, Comparator.comparing(Person::getName));
                     break;
 
                 case 4:
